@@ -24,12 +24,12 @@ if ENV.has_key?('GOAD_VAGRANT_OPTIONS') and ENV['GOAD_VAGRANT_OPTIONS'].include?
 end
 
   config.vm.provider "virtualbox" do |v|
-    v.memory = 4000
+    v.memory = 6000
     v.cpus = 2
   end
 
   config.vm.provider "vmware_desktop" do |v|
-    v.vmx["memsize"] = "4000"
+    v.vmx["memsize"] = "6000"
     v.vmx["numvcpus"] = "2"
     v.force_vmware_license = "workstation"  # force the licence for fix some vagrant plugin issue
     v.gui = true

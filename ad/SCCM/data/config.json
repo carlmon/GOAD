@@ -16,7 +16,7 @@
                 ]
             },
             "scripts" : [],
-            "vulns" : ["disable_firewall"]
+            "vulns" : []
         },
         "srv01" : {
             "hostname" : "MECM",
@@ -34,7 +34,7 @@
                 ]
             },
             "scripts" : [],
-            "vulns" : ["disable_firewall"]
+            "vulns" : []
         },
         "srv02" : {
             "hostname" : "MSSQL",
@@ -53,7 +53,7 @@
                 ]
             },
             "scripts" : [],
-            "vulns" : ["disable_firewall"],
+            "vulns" : [],
             "mssql":{
                 "sa_password": "Sup1_sa_P@ssw0rd!",
                 "svcaccount" : "sccm-sql",

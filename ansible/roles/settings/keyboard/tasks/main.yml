@@ -1,2 +1,2 @@
-- name: Windows | Add the fr keyboard layout
-  win_shell: $langList = Get-WinUserLanguageList; $langList.Add("{{layout}}"); Set-WinUserLanguageList -LanguageList $langList -Force
+- name: Windows | Add the dvorak keyboard layout
+  win_shell: $langList = Get-WinUserLanguageList; $langList[0].InputMethodTips[0]="{{layout}}"; Set-WinUserLanguageList -LanguageList $langList -Force

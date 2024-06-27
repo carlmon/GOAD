@@ -19,7 +19,7 @@
                 ]
             },
             "scripts" : ["sidhistory.ps1"],
-            "vulns" : ["disable_firewall"],
+            "vulns" : [],
             "security": ["account_is_sensitive"],
             "security_vars": {
                 "account_is_sensitive" : { "renly": {"account" : "renly.baratheon"} }
@@ -41,7 +41,7 @@
                 "sevenkingdoms\\Lanister"
             ],
             "scripts" : [],
-            "vulns" : ["disable_firewall"]
+            "vulns" : []
         },
         "dc02" : {
             "hostname" : "winterfell",
@@ -69,7 +69,7 @@
                 "rdp_scheduler.ps1",
                 "unconstrained_delegation_user.ps1"
             ],
-            "vulns" : ["disable_firewall","directory", "credentials", "autologon", "files", "enable_llmnr", "enable_nbt-ns", "shares"],
+            "vulns" : ["directory", "credentials", "autologon", "files", "enable_llmnr", "enable_nbt-ns", "shares"],
             "vulns_vars" : {
                 "directory": {
                     "setup": "c:\\setup"
@@ -122,7 +122,7 @@
                 ]
             },
             "scripts" : [],
-            "vulns" : ["directory", "disable_firewall", "openshares", "files", "permissions"],
+            "vulns" : ["directory", "openshares", "files", "permissions"],
             "vulns_vars" : {
                 "directory": {
                     "shares": "C:\\shares",
@@ -193,7 +193,7 @@
                 ]
             },
             "scripts" : ["asrep_roasting2.ps1"],
-            "vulns" : ["ntlmdowngrade", "disable_firewall"]
+            "vulns" : ["ntlmdowngrade"]
         },
         "srv03" : {
             "hostname" : "braavos",
@@ -211,7 +211,7 @@
                 "essos\\Dothraki"
             ],
             "scripts" : [],
-            "vulns" : ["openshares","disable_firewall"],
+            "vulns" : ["openshares"],
             "security": ["enable_run_as_ppl"],
             "mssql":{
                 "sa_password": "sa_P@ssw0rd!Ess0s",
