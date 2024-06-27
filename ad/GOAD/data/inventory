@@ -99,15 +99,15 @@ srv03
 ; allow computer update
 ; usage : update.yml
 [update]
+dc01
+dc02
 srv02
+srv03
 
 ; disable update
 ; usage : update.yml
 [no_update]
-dc01
-dc02
 dc03
-srv03
 
 ; allow defender
 ; usage : security.yml
@@ -115,9 +115,9 @@ srv03
 dc01
 dc02
 dc03
+srv02
 srv03
 
 ; disable defender
 ; usage : security.yml
 [defender_off]
-srv02
