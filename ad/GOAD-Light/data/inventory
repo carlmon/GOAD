@@ -109,12 +109,12 @@ srv02
 ; usage : update.yml
 [update]
 srv02
+dc01
+dc02
 
 ; disable update
 ; usage : update.yml
 [no_update]
-dc01
-dc02
 
 ; allow defender
 ; usage : security.yml
